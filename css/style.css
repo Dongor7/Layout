@@ -23,8 +23,8 @@
     .main-container {
         height: 2550px;;
         grid-template:  "header" 34.039%
-        "content" 61.726%
-        "footer" 4.235%;
+                        "content" 61.726%
+                        "footer" 4.235%;
     }
 
     .content {
