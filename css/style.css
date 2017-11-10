@@ -267,7 +267,13 @@
     }
 
     .content-item-buy-text{
+        color: #000000;
+        font-size: 18px;
+        line-height: 30px;
+    }
 
+    .content-item-value {
+        font-size: 27.5px;
     }
 
     .content-item-buy-button-wrapper {
@@ -353,7 +359,7 @@
     }
 
     .content-clearance {
-        grid-template-rows: 25.647% 74.353%;
+        grid-template-rows: 26.634% 73.366%/* 21.647% 79.353%*/;
     }
 
     .clearance-header {
@@ -410,24 +416,13 @@
     .clearance-items {
         grid-template: 82.873% 11.05% / 1fr 1fr;
         grid-gap: 30px;
-        padding: 30px;
-        background-color: #d6d6d6;
+        padding: 5px 30px 30px;
     }
 
     .clearance-item {
         grid-template-rows: 64.222% 35.778%;
         background-color: #ffffff;
     }
-
-    .clearance-item-buy-text {
-
-    }
-
-    .clearance-item-buy-button {
-
-    }
-
-
 
     .clearance-button-wrapper {
         grid-column: 1 / 3;
