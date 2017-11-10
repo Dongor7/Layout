@@ -1,11 +1,19 @@
+@font-face {
+    font-family: "AEmpirial";
+    src: url("../fonts/AEmpirial.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+    font-stretch: ultra-condensed;
+}
+
 @media only screen
-    and (min-width: 320px)
     and (max-width: 640px) {
 
     html {
         box-sizing: border-box;
         font-size: 30px;
         color: #ffffff;
+        font-family: Arial, serif;
     }
 
     *, *::before, *::after {
@@ -27,10 +35,6 @@
                         "footer" 4.235%;
     }
 
-    .content {
-        grid-area: content;
-    }
-
     /***************HEADER******************/
     .header {
         grid-area: header;
@@ -50,15 +54,11 @@
     .navigation {
         grid-template-columns: 24.219% 60.156% 15.625%;
         background-color: #000000;
+        cursor: pointer;
     }
 
     .navigation-item:hover {
         background-color: #444444;
-    }
-
-    .navigation-item:nth-child(1){
-        justify-content: left;
-        padding-left: 30px;
     }
 
     .navigation-item:nth-child(2){
@@ -71,8 +71,7 @@
     }
 
     .navigation-item:nth-child(3){
-        justify-content: right;
-        padding-right: 30px;
+        justify-content: center;
     }
 
     .navigation-item span:nth-child(1){
@@ -93,6 +92,11 @@
     .logo-section {
         color: #000000;
         font-size: 92px;
+        justify-content: center;
+    }
+
+    .logo-section img{
+        cursor: pointer;
     }
     /******************************************/
 
@@ -106,6 +110,11 @@
     .down-section .cart {
         border: 1px solid #d6d6d6;
         background-color: #FAFAFA;
+        cursor: pointer;
+    }
+
+    .down-section .cart:hover {
+        background: #ededed;
     }
 
     .cart-icon {
@@ -119,6 +128,7 @@
 
     .down-section .menu {
         background-color: #fd926d;
+        cursor: pointer;
     }
 
     .down-section .menu:hover {
@@ -158,6 +168,7 @@
         background: #fd926d url("../img/plus.png") center no-repeat;
         justify-content: center;
         height: 87px;
+        cursor: pointer;
     }
 
     .email .button:after {
@@ -189,28 +200,165 @@
         height: 88px;
     }
 
-    .social-facebook {
-        background: #f7f7f7 url("../img/facebook.png") center no-repeat;
+    .social-icon {
+        cursor: pointer;
     }
 
-    .social-facebook:hover {
-        background: #ededed url("../img/facebook.png") center no-repeat;
+    .facebook {
+        background: #f7f7f7;
     }
 
-    .social-twitter {
-        background: #ededed url("../img/twitter.png") center no-repeat;
+    .facebook:hover {
+        background: #ededed;
     }
 
-    .social-twitter:hover {
-        background: #f7f7f7 url("../img/twitter.png") center no-repeat;
+    .twitter {
+        background: #ededed;
     }
 
-    .social-pinterest {
-        background: #f7f7f7 url("../img/pinterest.png") center no-repeat;
+    .twitter:hover {
+        background: #f7f7f7;
     }
 
-    .social-pinterest:hover {
-        background: #ededed url("../img/pinterest.png") center no-repeat;
+    .pinterest {
+        background: #f7f7f7;
+    }
+
+    .pinterest:hover {
+        background: #ededed;
+    }
+    /******************************************/
+    /******************************************/
+
+    /*****************CONTENT******************/
+    .content {
+        grid-area: content;
+        grid-template-rows: 48.475% 51.525%;
+    }
+
+    .content-item-buy-section {
+        grid-template-rows: 38.35% 50.38%;
+        background-color: #f7f7f7;
+        padding: 13px 27px 15px;
+        grid-row-gap: 15px;
+    }
+
+    .content-hot {
+        grid-template-rows: 11.533% 88.467%;
+    }
+
+    .hot-header {
+        grid-template-columns: 9fr 1fr;
+        padding: 0 30px;
+        background-color: #f4845d;
+    }
+
+    .hot-header:hover {
+        cursor: pointer;
+        background-color: #dd6b44;
+    }
+
+    .hot-header-icon {
+        justify-content: right;
+    }
+
+    .hot-header-title {
+        text-align: left;
+    }
+
+    .hot-items {
+        grid-template: 85.045% 9.757% / 1fr 1fr;
+        grid-gap: 30px;
+        padding: 30px;
+        background-color: #fd926d;
+    }
+
+    .hot-item {
+        grid-template-rows: 69.216% 30.784%;
+        background-color: #ffffff;
+    }
+
+    .hot-button {
+        grid-column: 1 / 3;
+    }
+
+    .content-clearance {
+        grid-template-rows: 25.647% 74.353%;
+    }
+
+    .clearance-header {
+        grid-template-columns: 1fr 190px 1fr;
+        background: url("../img/clearance-title.png") no-repeat center;
+        justify-content: center;
+    }
+
+    .clearance-header .title-text {
+
+        grid-template-rows: 40% 60%;
+
+        font-family: AEmpirial, sans-serif;
+        font-size: 23px;
+        height: 150px;
+
+        font-stretch: ultra-condensed;
+    }
+
+    .clearance-header .title-text h2{
+        align-content: flex-end;
+        font-weight: 100;
+    }
+
+    .clearance-header .title-text .percent {
+        grid-template-columns: 55% 45%;
+        align-content: flex-start;
+    }
+
+    .clearance-header .title-text .percent span:first-child{
+        text-align: right;
+    }
+
+    .clearance-header .title-text .percent span:last-child{
+        text-align: left;
+        line-height: 33px;
+    }
+
+    .clearance-header .title-text p{
+        display: inline-block;
+        line-height: 68px;
+        font-size: 80px;
+    }
+
+    .clearance-header-line{
+        width: 100%;
+    }
+
+    .clearance-header-line .line-wrapper {
+        height: 1px;
+        background-color: #bebebe;
+    }
+
+    .clearance-items {
+        grid-template: 82.873% 11.05% / 1fr 1fr;
+        grid-gap: 30px;
+        padding: 30px;
+        background-color: #d6d6d6;
+    }
+
+    .clearance-item {
+        grid-template-rows: 64.222% 35.778%;
+        background-color: #ffffff;
+    }
+
+    .clearance-item-buy-text {
+
+    }
+
+    .clearance-item-buy-button {
+
+    }
+
+    .clearance-button {
+        grid-column: 1 / 3;
     }
     /******************************************/
     /******************************************/
@@ -218,13 +366,18 @@
     /*****************FOOTER*******************/
     .footer {
         grid-area: footer;
-        grid-template-columns: 50% 50%;
+        grid-template: 100% / 14.531% 85.469%;
         background-color: #000000;
     }
 
     .footer-icon{
         padding-left: 30px;
         justify-content: left;
+    }
+
+    .footer-icon:hover {
+        cursor: pointer;
+        background-color: #242424;
     }
 
     .footer-contacts {
