@@ -1,9 +1,11 @@
 @font-face {
     font-family: "AEmpirial";
     src: url("../fonts/AEmpirial.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 100;
-    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTStd-Lt";
+    src: url("../fonts/HelveticaNeueLTStd-Lt.otf") format("truetype");
 }
 
 @media only screen
@@ -243,6 +245,72 @@
         grid-row-gap: 15px;
     }
 
+    .content-button-wrapper {
+        grid-column: 1 / 3;
+        justify-content: center;
+    }
+
+    .content-button {
+        font-family: "HelveticaNeueLTStd-Lt", sans-serif;
+        font-weight: 100;
+        width: 220px;
+        height: 60px;
+        background-color: #000000;
+        font-size: 20px;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .content-button:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .content-item-buy-text{
+
+    }
+
+    .content-item-buy-button-wrapper {
+        grid-template-rows: 60px;
+        align-content: flex-start;
+        cursor: pointer;
+    }
+
+    .content-item-buy-button-wrapper:after {
+        content: "";
+        width: 100%;
+        height: 7px;
+        background-color: #dd6b44;
+        justify-content: center;
+        display: block;
+    }
+
+    .content-item-buy-button:hover {
+        height: 67px;
+        background-color: #dd6b44;
+    }
+
+    .content-item-buy-button {
+        grid-template-columns: 1fr 20px;
+        grid-template-rows: 100%;
+        background-color: #fd926d;
+        padding: 0 20px;
+        grid-column-gap: 5px;
+    }
+
+    .content-item-buy-button-text {
+        font-family: "HelveticaNeueLTStd-Lt", sans-serif;
+        font-size: 20px;
+    }
+
+    .content-item-buy-button-icon {
+        justify-content: right;
+    }
+
+    .content-item-buy-button-icon img{
+        width: 17px;
+    }
+
     .content-hot {
         grid-template-rows: 11.533% 88.467%;
     }
@@ -264,6 +332,8 @@
 
     .hot-header-title {
         text-align: left;
+        font-size: 30px;
+        font-weight: 100;
     }
 
     .hot-items {
@@ -357,7 +427,9 @@
 
     }
 
-    .clearance-button {
+
+
+    .clearance-button-wrapper {
         grid-column: 1 / 3;
     }
     /******************************************/
