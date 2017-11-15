@@ -196,8 +196,8 @@ html {
 
 /***********CONTENT**********/
 .content {
-    height: 1636px;
-    grid-template: 88px 736px 808px / 100%;
+    height: 1928px;
+    grid-template: 88px 292px 736px 808px / 100%;
 }
 
 .email-social-section{
@@ -272,6 +272,81 @@ html {
 }
 
 /****************************/
+
+.advertisement {
+    display: grid;
+    align-content: start;
+}
+
+.advertisement .container {
+    height: 257px;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    padding: 0 15px;
+    grid-gap: 2px;
+}
+
+.outfits {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    grid-template-columns: repeat(9, 1fr);
+    background: url("../img/advertisement/pic-1.png") center;
+}
+
+.collection {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    grid-template-columns: repeat(9, 1fr);
+    background: url("../img/advertisement/pic-2.png") center;
+}
+
+.sellers {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background: url("../img/advertisement/pic-3.png") center;
+    align-content: end;
+}
+
+.leather {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(9, 1fr);
+    background: url("../img/advertisement/pic-4.png") center;
+}
+
+.adv-item:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.outfits > span {
+    grid-column: 4 / 10;
+    height: 197px;
+    background: url("../img/advertisement/outfits.png") no-repeat center;
+    background-size: 160px;
+}
+
+.collection > span {
+    grid-column: 1 / 4;
+    height: 131px;
+    background: url("../img/advertisement/collection-inner.png") no-repeat right;
+    background-size: 100px;
+}
+
+.sellers > span {
+    height: 40px;
+    background: url("../img/advertisement/best sellers.png") no-repeat center;
+    padding-bottom: 10px;
+    background-size: 140px;
+}
+
+.leather > span {
+    grid-column: 1 / 7;
+    height: 105px;
+    width: 140px;
+    background: url("../img/advertisement/leather.png") no-repeat center;
+    background-size: 117px;
+}
+
 /****************************/
 
 /***********FOOTER***********/

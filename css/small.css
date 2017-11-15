@@ -169,6 +169,10 @@
         grid-template: 260px 736px 808px / 100%;
     }
 
+    .advertisement {
+        display: none;
+    }
+
     .email-social-section .container{
         grid-template-rows: 1fr 1fr;
         grid-row-gap: 25px;
