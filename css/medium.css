@@ -194,6 +194,86 @@ html {
 /****************************/
 /****************************/
 
+/***********CONTENT**********/
+.content {
+    height: 1636px;
+    grid-template: 88px 736px 808px / 100%;
+}
+
+.email-social-section{
+    background-color: #ededed;
+    margin-bottom: 33px;
+    align-content: start;
+}
+
+.email-social-section .container{
+    grid-template-rows: 1fr;
+    grid-template-columns: 240px 1fr 250px;
+    grid-row-gap: 0;
+    padding: 0 15px 0 15px;
+}
+
+.email {
+    grid-template-columns: 1fr 132px 28px;
+}
+
+.email > p {
+    display: grid;
+    color: #6c6c6c;
+    text-align: left;
+}
+
+.email input {
+    height: 25px;
+    border: none;
+    background-color: #fff;
+    padding: 0 10px;
+    color: #9f9f9f;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.email .button {
+    background: #fd926d url("../img/plus.png") center no-repeat;
+    background-size: 10px;
+    justify-content: center;
+    height: 23px;
+    cursor: pointer;
+}
+
+.email .button:after {
+    content: "";
+    width: 28px;
+    height: 3px;
+    background-color: #dd6b44;
+    justify-content: center;
+    margin-top: 23px;
+    display: block;
+}
+
+.email .button:hover {
+    background-color: #dd6b44;
+    height: 25px;
+}
+
+.social {
+    grid-column: 3 / 4;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr repeat(4, 55px);
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+.social span:first-child {
+    grid-column: 1 / 3;
+    justify-content: left;
+    height: 55px;
+}
+
+/****************************/
+/****************************/
+
 /***********FOOTER***********/
 
 .footer {

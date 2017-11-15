@@ -160,9 +160,27 @@
     .slider{
         display: none;
     }
-/************************************/
+    /******************************************/
+    /******************************************/
+
+    /*****************CONTENT******************/
+    .content {
+        height: 1805px;
+        grid-template: 260px 736px 808px / 100%;
+    }
+
+    .email-social-section .container{
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 25px;
+        padding: 25px 15px;
+    }
+
     .email {
         grid-template-columns: auto 95px;
+    }
+
+    .email > p {
+        display: none;
     }
 
     .email input {
@@ -239,20 +257,6 @@
         background: #ededed;
     }
     /******************************************/
-    /******************************************/
-
-    /*****************CONTENT******************/
-    .content {
-        height: 1805px;
-        grid-template: 260px 736px 808px / 100%;
-    }
-
-    .email-social-section{
-        grid-template-rows: 1fr 1fr;
-        grid-row-gap: 25px;
-        padding: 25px 15px;
-    }
-
     .content-item-buy-section {
         grid-template-rows: 38.35% 50.38%;
         background-color: #f7f7f7;
@@ -456,6 +460,7 @@
 
     .footer {
         grid-template-rows: 108px;
+        height: 479px;
     }
 
     .footer .down-section .container {
