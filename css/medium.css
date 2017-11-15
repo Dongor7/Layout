@@ -200,6 +200,10 @@ html {
     grid-template: 88px 292px 1545px / 100%;
 }
 
+.content .container {
+    padding: 0 15px;
+}
+
 .email-social-section{
     background-color: #ededed;
     margin-bottom: 33px;
