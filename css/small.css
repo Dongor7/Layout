@@ -115,6 +115,10 @@
         padding: 0 30px;
     }
 
+    .menu-section .big-menu {
+        display: none;
+    }
+
     .your-cart {
         grid-template-columns: 1fr 1fr;
         display: none;
@@ -446,13 +450,20 @@
 
     /*****************FOOTER*******************/
 
-    .footer {
-        background-color: #000000;
+    .credits-section, .middle-section {
+        display: none;
     }
 
-    .footer .container {
-        height: 108px;
+    .footer {
+        grid-template-rows: 108px;
+    }
+
+    .footer .down-section .container {
         grid-template: 100% / 14.531% 85.469%;
+    }
+
+    .down-section {
+        background-color: #000000;
     }
 
     .footer-icon{
