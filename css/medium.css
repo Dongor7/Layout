@@ -197,7 +197,7 @@ html {
 /***********CONTENT**********/
 .content {
     height: 1928px;
-    grid-template: 88px 292px 736px 808px / 100%;
+    grid-template: 88px 292px 1545px / 100%;
 }
 
 .email-social-section{
